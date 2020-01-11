@@ -28,11 +28,16 @@ const theme = {
   }
 };
 
+const linkToDocs =
+  "https://www.notion.so/p0oker/SIGNup-Documentation-88024f39e70041e2a5aa33d2da565ddf";
+
+const linkToDiscord = "https://discord.gg/SC2GDx";
+
 function App() {
   return (
     <Grommet theme={theme}>
       <Grid
-        rows={["80px", "large"]}
+        rows={["80px"]}
         alignContent="center"
         areas={[
           ["header", "header"],
@@ -62,8 +67,7 @@ function App() {
                 {
                   label: "Documentation",
                   onClick: () => {
-                    document.location =
-                      "https://www.notion.so/p0oker/SIGNup-Documentation-88024f39e70041e2a5aa33d2da565ddf";
+                    document.location = linkToDocs;
                   }
                 },
                 { label: "Discord Channel", onClick: () => {} }
@@ -103,13 +107,13 @@ function App() {
           </Box>
 
           <Box direction="row" margin={{ top: "50px" }} gap="20px">
-            <Button
+            <Anchor
               primary
               color="brand"
               label="Learn More"
               onClick={() => {}}
             />
-            <Button label="Join Us In Discord" onClick={() => {}} />
+            <Anchor label="Join Us In Discord" href={linkToDiscord} />
           </Box>
         </Box>
       </Grid>
