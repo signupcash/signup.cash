@@ -25,7 +25,7 @@ function App({ data }) {
               type: "slideDown",
               delay: 200,
               duration: 600,
-              size: "xlarge"
+              size: "large"
             }}
             alignSelf="end"
           >
@@ -36,16 +36,20 @@ function App({ data }) {
         </Box>
 
         <Box animation="fadeIn" width="500px">
-          <Text size="1.4rem" textAlign="center" weight="600">
+          <Text size="1.5rem" textAlign="center" weight="600">
             Non-custodial web-based{" "}
-            <Text size="1.4rem" weight="600" color="status-error">
+            <Text size="1.5rem" weight="600" color="status-error">
               key signer
             </Text>{" "}
             and social interactions with BCH
           </Text>
         </Box>
 
-        <Box direction="row" margin={{ top: "50px" }} gap="20px">
+        <Box
+          direction="row"
+          margin={{ top: "50px", bottom: "150px" }}
+          gap="20px"
+        >
           <Anchor primary color="brand" label="Learn More" onClick={() => {}} />
           <Anchor
             label="Join Us In Discord"
