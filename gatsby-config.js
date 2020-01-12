@@ -11,6 +11,16 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-postcss",
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Poppins`,
+          `source sans pro\:300,400,500,600,700` // you can also specify font weights and styles
+        ],
+        display: "swap"
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

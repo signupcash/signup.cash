@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "gatsby": "^2.18.21",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.37",
     "gatsby-plugin-postcss": "^2.1.19",
     "gatsby-plugin-react-helmet": "^3.1.21",
