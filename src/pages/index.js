@@ -9,7 +9,7 @@ import {
   Button,
   Icons
 } from "grommet";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 
 function App({ data }) {
@@ -17,7 +17,7 @@ function App({ data }) {
     <Layout>
       <>
         <Box direction="row" margin={{ top: "150px", bottom: "20px" }}>
-          <Text size="70px" weight="600">
+          <Text size="65px" weight="600">
             SIGN
           </Text>
           <Box
@@ -50,10 +50,10 @@ function App({ data }) {
           margin={{ top: "50px", bottom: "150px" }}
           gap="20px"
         >
-          <Anchor primary color="brand" label="Learn More" onClick={() => {}} />
+          <Link to="/learn_more">Learn More</Link>
           <Anchor
-            label="Join Us In Discord"
-            href={data.site.siteMetadata.discordLink}
+            label="Join Us In Telegram"
+            href={data.site.siteMetadata.telegramLink}
           />
         </Box>
       </>

@@ -12,7 +12,7 @@ import {
   Button,
   Icons
 } from "grommet";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 import "./layout.css";
 
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
           title
           description
           author
-          discordLink
+          telegramLink
           docsLink
         }
       }
@@ -64,11 +64,11 @@ const Layout = ({ children }) => {
           pad={{ right: "10vw", left: "10vw" }}
         >
           <Box direction="row" align="center">
-            <Text weight="600" size="17px">
-              SIGNUP
-            </Text>
-            <Text margin="5px">-</Text>
-            <Text size="15px">A Bitcoin Cash Open Source Project</Text>
+            <Link to="/">
+              <Text weight="600" size="17px">
+                SIGNUP
+              </Text>
+            </Link>
           </Box>
           <Box direction="row" align="center">
             <Menu
@@ -87,7 +87,7 @@ const Layout = ({ children }) => {
                 {
                   label: "Discord Channel",
                   onClick: () => {
-                    document.location = data.site.siteMetadata.discordLink;
+                    document.location = data.site.siteMetadata.telegramLink;
                   }
                 }
               ]}
@@ -105,7 +105,10 @@ const Layout = ({ children }) => {
           <Box gridArea="footer" alignSelf="end" as="footer">
             <Text color="light-3" weight="700" size="15px">
               {" "}
-              Made for freed0m by {data.site.siteMetadata.author}
+              Made for freed0m by{" "}
+              <a href={`https://twitter.com/${data.site.siteMetadata.author}`}>
+                {data.site.siteMetadata.author}
+              </a>
             </Text>
           </Box>
         </Box>
