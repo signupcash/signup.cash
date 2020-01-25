@@ -9,6 +9,7 @@ import {
   Button,
   Icons
 } from "grommet";
+import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 
@@ -16,6 +17,13 @@ function App({ data }) {
   return (
     <Layout>
       <>
+        <Helmet
+          title={
+            data.site.siteMetadata.title +
+            " - " +
+            data.site.siteMetadata.description
+          }
+        />
         <Box direction="row" margin={{ top: "150px", bottom: "20px" }}>
           <Text size="65px" weight="600">
             SIGN
@@ -69,7 +77,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-        discordLink
+        telegramLink
         docsLink
       }
     }

@@ -10,7 +10,8 @@ import {
   Grommet,
   Menu,
   Button,
-  Icons
+  Icons,
+  Footer
 } from "grommet";
 import { useStaticQuery, graphql, Link } from "gatsby";
 
@@ -85,7 +86,7 @@ const Layout = ({ children }) => {
                   }
                 },
                 {
-                  label: "Discord Channel",
+                  label: "Telegram Channel",
                   onClick: () => {
                     document.location = data.site.siteMetadata.telegramLink;
                   }
@@ -102,15 +103,15 @@ const Layout = ({ children }) => {
           pad={{ right: "10vw", left: "10vw" }}
         >
           {children}
-          <Box gridArea="footer" alignSelf="end" as="footer">
+          <Footer gridArea="footer" alignSelf="end" margin={{ bottom: "30px" }}>
             <Text color="light-3" weight="700" size="15px">
               {" "}
-              Made for freed0m by{" "}
+              code is being written by{" "}
               <a href={`https://twitter.com/${data.site.siteMetadata.author}`}>
                 {data.site.siteMetadata.author}
               </a>
             </Text>
-          </Box>
+          </Footer>
         </Box>
       </Grid>
     </Grommet>
