@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Signup.cash`,
+    title: `SIGNUP`,
     description: `Non-custodial web-based key signer and social interactions with BCH`,
     author: `@p0oker`,
-    telegramLink: "",
+    telegramLink: "https://t.me/joinchat/NAXHtw_YK7Qu_MDJt3aOZw",
     docsLink:
       "https://www.notion.so/p0oker/SIGNup-Documentation-88024f39e70041e2a5aa33d2da565ddf"
   },
