@@ -8,11 +8,10 @@ import Layout from "../components/Layout";
 
 const codeSample = `(async function() {
   const user = await signup.cash.authorize();
+  // requesting your user to pay
+  await user.pay(1000, 'SAT');
   // requesting your user to follow p0oker in memo
   await user.memoProtocol.follow('p0oker');
-  
-  // requesting your user to pay
-  await user.pay(0.005, 'BCH');
 })();`;
 
 export default function({ data }) {
