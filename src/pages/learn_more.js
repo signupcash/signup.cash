@@ -14,7 +14,7 @@ const codeSample = `(async function() {
   await user.memoProtocol.follow('p0oker');
 })();`;
 
-export default function({ data }) {
+export default function ({ data }) {
   return (
     <Layout>
       <Helmet
@@ -72,8 +72,11 @@ export default function({ data }) {
           Is it ready to be used?
         </Heading>
         <Paragraph fill margin="small" size="large">
-          Not yet but soon will be. If you are interested to get involved with
-          the development{" "}
+          Yes,{" "}
+          <a href="https://read.cash/@p0oker/announcing-signupcash-empowering-web-based-dapp-ecosystem-in-bitcoin-cash-13935f89">
+            here is the announcement article
+          </a>{" "}
+          explaining the goals and objectives of SIGNUP. Feel free to{" "}
           <a href={data.site.siteMetadata.telegramLink}>
             join the Telegram group
           </a>{" "}
