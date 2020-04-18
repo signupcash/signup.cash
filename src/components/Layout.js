@@ -11,7 +11,7 @@ import {
   Menu,
   Button,
   Icons,
-  Footer
+  Footer,
 } from "grommet";
 import { useStaticQuery, graphql, Link } from "gatsby";
 
@@ -22,15 +22,15 @@ const theme = {
     colors: {
       "dark-1": "#171941",
       brand: "#1d8cf8",
-      "accent-1": "#eee"
-    }
+      "accent-1": "#eee",
+    },
   },
   text: {
     extend: "font-family: 'Poppins', sans-serif; line-height: 1.4em",
     small: {
-      size: "17px"
-    }
-  }
+      size: "17px",
+    },
+  },
 };
 
 const Layout = ({ children }) => {
@@ -42,6 +42,7 @@ const Layout = ({ children }) => {
           description
           author
           telegramLink
+          githubLink
           docsLink
         }
       }
@@ -56,7 +57,7 @@ const Layout = ({ children }) => {
         areas={[
           ["header", "header"],
           ["main", "main"],
-          ["footer", "footer"]
+          ["footer", "footer"],
         ]}
       >
         <Header
@@ -83,14 +84,20 @@ const Layout = ({ children }) => {
                   label: "Documentation",
                   onClick: () => {
                     document.location = data.site.siteMetadata.docsLink;
-                  }
+                  },
                 },
                 {
                   label: "Telegram Channel",
                   onClick: () => {
                     document.location = data.site.siteMetadata.telegramLink;
-                  }
-                }
+                  },
+                },
+                {
+                  label: "Github",
+                  onClick: () => {
+                    document.location = data.site.siteMetadata.githubLink;
+                  },
+                },
               ]}
             />
           </Box>
@@ -119,7 +126,7 @@ const Layout = ({ children }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

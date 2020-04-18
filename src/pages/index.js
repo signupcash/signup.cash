@@ -7,7 +7,7 @@ import {
   Text,
   Menu,
   Button,
-  Icons
+  Icons,
 } from "grommet";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
@@ -33,7 +33,7 @@ function App({ data }) {
               type: "slideDown",
               delay: 200,
               duration: 600,
-              size: "large"
+              size: "large",
             }}
             alignSelf="end"
           >
@@ -45,11 +45,10 @@ function App({ data }) {
 
         <Box animation="fadeIn" width="500px">
           <Text size="1.5rem" textAlign="center" weight="600">
-            Non-custodial web-based{" "}
+            Non-custodial platform as a service for building{" "}
             <Text size="1.5rem" weight="600" color="status-error">
-              key signer
+              decentralized apps
             </Text>{" "}
-            and social interactions with BCH
           </Text>
         </Box>
 
