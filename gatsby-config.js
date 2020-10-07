@@ -5,8 +5,7 @@ module.exports = {
     author: `@p0oker`,
     githubLink: "https://github.com/signupcash",
     telegramLink: "https://t.me/joinchat/NAXHtw_YK7Qu_MDJt3aOZw",
-    docsLink:
-      "https://www.notion.so/p0oker/SIGNup-Documentation-88024f39e70041e2a5aa33d2da565ddf",
+    docsLink: "https://docs.signup.cash",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
