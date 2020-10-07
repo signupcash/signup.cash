@@ -25,62 +25,54 @@ export default function ({ data }) {
         animation="fadeIn"
       >
         <Heading level="3" margin="small">
-          What is SIGNUP?
+          What is Signup?
         </Heading>
         <Paragraph fill margin="small" size="large">
-          Signup is a library for web developers to request Bitcoin Cash
-          transactions from their users. They can ask users to pay for a service
-          or perform social interactions on top of Memo protocol{" "}
+          Signup is a non-custodial platform as a service for developers to
+          build BCH decentralized apps. Developers can use this platform to
+          onboard users without any need to keep the custody of their private
+          keys. Providing a safer and more reliable environment to build Bitcoin
+          Cash apps for the web. <br />
+          The core elements of the Signup consist of:
+        </Paragraph>
+        <Paragraph fill margin="small" size="large">
           <Text color="accent-3" size="large">
-            without keeping the custody
+            DApp Wallet:
           </Text>{" "}
-          of their users private key or asking them to scan QR codes with their
-          phone wallet. See it like a non-custodial alternative to Facebook
-          Login buttons!
+          A non-custodial fully functional and programmable wallet on users
+          browser to work like a secure gateway, allowing users to login,
+          perform transactions and provide signatures to the applications.
+        </Paragraph>
+        <Paragraph fill margin="small" size="large">
+          <Text color="accent-3" size="large">
+            Libraries:
+          </Text>{" "}
+          Utility functions and easy to use API for developers to request users
+          for different type of transactions or signatures without exposing the
+          technical side of building a transaction on the blockchain.
+        </Paragraph>
+        <Paragraph fill margin="small" size="large">
+          <Text color="accent-3" size="large">
+            Provider:{" "}
+          </Text>
+          A script that can be inserted in the html of the applications or be
+          imported by modern JavaScript environments to connect applications to
+          Signup wallet.{" "}
         </Paragraph>
         <Paragraph fill margin="small" size="large">
           Signup will provide a very high-level and easy to understand API for
-          developers to enhance special functions like communicating with Memo
-          protocol without understanding the caveats of OP_RETURN script.
+          developers to enhance special functions like signign transactions,
+          requesting/verifying signatures and giving authorized access to users
+          using their Bitcoin Cash address.
         </Paragraph>
-        <Heading level="3" margin="small">
-          How it works?
-        </Heading>
-        <Paragraph fill margin="small" size="large">
-          Developers register in Signup and receive a two line script that will
-          BCH-enable their website. Meaning that they can simply request users
-          for any kind of transaction and users will confirm the request with a
-          click. Developers under no condition have the ability to make the
-          users perform unwanted transaction or find out about their private or
-          even public key.
-        </Paragraph>
-        <Heading level="3" margin="small">
-          Show me the code!
-        </Heading>
-        <Paragraph fill margin="small" size="large">
-          As an example with this code you can authenticate the user (if they
-          are already not) and request them to pay 1000 satoshi and then follow
-          my username in memo!
-        </Paragraph>
-        <Box width="580px" alignSelf="center" direction="row-responsive">
-          <Highlight language="javascript" style={atomOneDark}>
-            {codeSample}
-          </Highlight>
-        </Box>
 
         <Heading level="3" margin="small">
-          Is it ready to be used?
+          Where to start?
         </Heading>
         <Paragraph fill margin="small" size="large">
-          Yes,{" "}
-          <a href="https://read.cash/@p0oker/announcing-signupcash-empowering-web-based-dapp-ecosystem-in-bitcoin-cash-13935f89">
-            here is the announcement article
-          </a>{" "}
-          explaining the goals and objectives of SIGNUP. Feel free to{" "}
-          <a href={data.site.siteMetadata.telegramLink}>
-            join the Telegram group
-          </a>{" "}
-          and say hi!
+          You can start by going through our documentation page or join the
+          Telegram group (both links are provided on top) to learn more about
+          how to utilize Signup in your application.
         </Paragraph>
       </Box>
     </Layout>
