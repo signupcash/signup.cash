@@ -58,10 +58,7 @@ function App({ data }) {
           gap="20px"
         >
           <Link to="/learn_more">Learn More</Link>
-          <Anchor
-            label="Join Us In Telegram"
-            href={data.site.siteMetadata.telegramLink}
-          />
+          <Link to="https://wallet.signup.cash">Go to Wallet</Link>
         </Box>
       </>
     </Layout>
