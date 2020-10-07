@@ -68,38 +68,30 @@ const Layout = ({ children }) => {
           <Box direction="row" align="center">
             <Link to="/">
               <Text weight="600" size="17px">
-                SIGNUP
+                Home
               </Text>
             </Link>
-          </Box>
-          <Box direction="row" align="center">
-            <Menu
-              a11yTitle="Getting Started Menu"
-              label="Getting Started"
-              size="small"
-              dropAlign={{ top: "bottom", right: "right" }}
-              dropBackground="accent-1"
-              items={[
-                {
-                  label: "Documentation",
-                  onClick: () => {
-                    document.location = data.site.siteMetadata.docsLink;
-                  },
-                },
-                {
-                  label: "Telegram Channel",
-                  onClick: () => {
-                    document.location = data.site.siteMetadata.telegramLink;
-                  },
-                },
-                {
-                  label: "Github",
-                  onClick: () => {
-                    document.location = data.site.siteMetadata.githubLink;
-                  },
-                },
-              ]}
-            />
+            <Link to="https://docs.signup.cash" style={{ marginLeft: 32 }}>
+              <Text weight="600" size="17px">
+                Docs
+              </Text>
+            </Link>
+            <Link
+              to={data.site.siteMetadata.githubLink}
+              style={{ marginLeft: 32 }}
+            >
+              <Text weight="600" size="17px">
+                Github
+              </Text>
+            </Link>
+            <Link
+              to={data.site.siteMetadata.telegramLink}
+              style={{ marginLeft: 32 }}
+            >
+              <Text weight="600" size="17px">
+                Telegram
+              </Text>
+            </Link>
           </Box>
         </Header>
 
@@ -110,10 +102,10 @@ const Layout = ({ children }) => {
           pad={{ right: "10vw", left: "10vw" }}
         >
           {children}
+
           <Footer gridArea="footer" alignSelf="end" margin={{ bottom: "30px" }}>
             <Text color="light-3" weight="700" size="15px">
-              {" "}
-              Made for the vision of P2P Cash by{" "}
+              Made in 2020 by{" "}
               <a href={`https://twitter.com/${data.site.siteMetadata.author}`}>
                 {data.site.siteMetadata.author}
               </a>
