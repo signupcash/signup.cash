@@ -20,7 +20,7 @@ import "./layout.css";
 const theme = {
   global: {
     colors: {
-      "dark-1": "#171941",
+      "dark-1": "#6c59db",
       brand: "#1d8cf8",
       "accent-1": "#eee",
     },
@@ -113,7 +113,7 @@ const Layout = ({ children }) => {
           <Footer gridArea="footer" alignSelf="end" margin={{ bottom: "30px" }}>
             <Text color="light-3" weight="700" size="15px">
               {" "}
-              code is being written by{" "}
+              Made for the vision of P2P Cash by{" "}
               <a href={`https://twitter.com/${data.site.siteMetadata.author}`}>
                 {data.site.siteMetadata.author}
               </a>
