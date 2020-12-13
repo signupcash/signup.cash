@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `SIGNUP`,
-    description: `Non-custodial platform as a service for building decentralized apps`,
+    title: `Signup.cash`,
+    description: `Non-custodial wallet for building Bitcoin Cash apps`,
     author: `@p0oker`,
-    githubLink: "https://github.com/signupcash",
-    telegramLink: "https://t.me/joinchat/NAXHtw_YK7Qu_MDJt3aOZw",
-    docsLink: "https://docs.signup.cash",
+    githubLink: 'https://github.com/signupcash',
+    telegramLink: 'https://t.me/joinchat/NAXHtw_YK7Qu_MDJt3aOZw',
+    docsLink: 'https://docs.signup.cash',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-postcss",
-    "gatsby-plugin-styled-components",
+    'gatsby-plugin-postcss',
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -18,7 +18,7 @@ module.exports = {
           `Poppins`,
           `\:500,600,700`, // you can also specify font weights and styles
         ],
-        display: "swap",
+        display: 'swap',
       },
     },
     {
@@ -43,4 +43,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-};
+}

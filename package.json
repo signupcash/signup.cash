@@ -3,21 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/generator": "^7.12.5",
+    "@babel/parser": "^7.12.7",
+    "autoprefixer": "^10.1.0",
+    "axios": "^0.21.0",
+    "babel-plugin-macros": "^3.0.0",
+    "clsx": "^1.1.1",
+    "debounce": "^1.2.0",
+    "framer-motion": "^2.9.5",
     "gatsby": "^2.18.21",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.37",
-    "gatsby-plugin-postcss": "^2.1.19",
+    "gatsby-plugin-postcss": "^3.3.0",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-styled-components": "^3.1.18",
     "gatsby-source-filesystem": "^2.1.46",
     "grommet": "^2.9.0",
+    "grommet-icons": "^4.5.0",
+    "postcss": "^8.2.0",
     "postcss-preset-env": "^6.7.0",
+    "prismjs": "^1.22.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-headroom": "^3.0.0",
     "react-helmet": "^5.2.1",
     "react-syntax-highlighter": "^12.2.1",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "tailwindcss": "^2.0.1"
   },
   "scripts": {
     "start": "gatsby develop",
@@ -37,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }
