@@ -93,7 +93,7 @@ function App({ data }) {
             </Link>
           </div>
         </section>
-        <section>
+        <section className="relative max-w-screen-lg xl:max-w-screen-xl mx-auto">
           <div className="px-4 sm:px-6 md:px-8 mb-10 sm:mb-16 md:mb-20">
             <Caption as="h2" className="text-purple-700 mb-3 xl:ml-16">
               Authenticity is the key
