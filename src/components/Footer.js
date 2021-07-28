@@ -27,7 +27,7 @@ const footerNav = {
   Community: {
     items: [
       { title: 'GitHub', href: 'https://github.com/signupcash' },
-      { title: 'Twitter', href: 'twitter.com/signupwallet' },
+      { title: 'Twitter', href: 'https://twitter.com/signupwallet' },
       {
         title: 'Telegram',
         href: 'https://t.me/joinchat/NAXHtw_YK7Qu_MDJt3aOZw',
