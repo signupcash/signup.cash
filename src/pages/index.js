@@ -25,13 +25,40 @@ function App({ data }) {
           }
         />
         <section className="relative max-w-screen-lg xl:max-w-screen-xl mx-auto">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900 mt-10 mb-8 sm:mt-14 sm:mb-10">
-            Build decentralized apps without compromising user experience
+          <h1 className="text-4xl text-center sm:text-6xl lg:text-8xl leading-none font-extrabold tracking-tight text-gray-900 mt-30 mb-8 sm:mt-14 sm:mb-4">
+            A crypto wallet living in your browser
+          </h1>
+          <h4 className="text-2xl text-center font-semibold text-gray-400">
+            For p2p apps, <span className="text-red-500 animate-pulse">censorship</span> resistant campaigns, DeFi and accessing the future of the web!
+          </h4>
+          <div className="relative mx-auto mt-20 text-center">
+
+            <a
+              className="w-full sm:w-auto flex-none bg-purple-700 hover:bg-violet-500 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-l-xl border-r border-2 border-white  focus:outline-none transition-colors duration-200"
+              href="https://wallet.signup.cash"
+            >
+              Web Wallet
+            </a>
+            <a
+              className="w-full sm:w-auto flex-none bg-gray-600 hover:bg-gray-600 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-r-xl border-l border-2 border-white  focus:outline-none transition-colors duration-200"
+              disabled
+              title="Coming soon!"
+            >
+              Browser Extension
+            </a>
+          </div>
+        </section>
+        <section className="lg:pl-20 relative max-w-screen-lg xl:max-w-screen-xl mx-auto">
+          <Caption as="h2" className="text-blue-700">
+            For developers
+          </Caption>
+          <h1 className="text-3xl sm:text-6xl lg:text-4xl leading-none font-extrabold tracking-tight text-gray-900 mt-2 mb-8 ">
+            Build DApps with Signup SDK
           </h1>
           <p className="max-w-screen-lg text-lg sm:text-2xl sm:leading-10 font-medium mb-10 sm:mb-11">
             Made for fast development time and{' '}
             <span className="text-violet-700">radical innovations</span> with
-            digital signatures, Bitcoin Cash payments, and smart contracts.
+            digital signatures, Bitcoin Cash payments, Crowdfunding, SLP tokens and NFTs.
           </p>
 
           <div className="flex flex-wrap space-y-4 sm:space-y-0 sm:space-x-4 text-center">
@@ -66,25 +93,22 @@ function App({ data }) {
               </svg>
             </button>
           </div>
-          <Hero />
+          
         </section>
+        
         <section className="relative max-w-screen-lg xl:max-w-screen-xl mx-auto">
           <div className="px-4 sm:px-6 md:px-8 mb-10 sm:mb-16 md:mb-20">
             <Caption as="h2" className="text-blue-700 mb-3 xl:ml-16">
               Build apps with
             </Caption>
             <BigText className="mb-8 xl:ml-16">
-              <Widont>Fast and furious interactions</Widont>
+              <Widont>Cutting edge integrations</Widont>
             </BigText>
             <Paragraph className="mb-6 xl:ml-16">
-              Signup is using <InlineCode>spend tokens</InlineCode> to allow
-              users to grant your app permission to spend from their wallet
-              within a boundary. This way, not every single transaction is
-              required to be approved by the user. The end result is a better
-              user experience and faster application.
+              Signup brings cutting-edge technologies to your DApp with SLP tokens, NFTs, Crowdfunding (flipstarter) and the latest proposals and improvements. All functionalities are supported by our developer SDK to be integrated anywhere without borders.
             </Paragraph>
             <Link
-              href="https://read.cash/@SIGNUP/how-spend-tokens-work-in-signup-dapp-wallet-3c718777"
+              href="https://read.cash/@SIGNUP"
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="text-blue-700 hover:text-blue-500 xl:ml-16"

@@ -1,6 +1,5 @@
 import React from 'react'
 import { gradients } from '../utils/gradients'
-import { motion } from 'framer-motion'
 import styles from './GradientLockup.module.css'
 
 const rotation = {
@@ -28,7 +27,7 @@ export default function GradientLockup({
           pin === 'left' ? '-ml-8 sm:pr-4 sm:ml-0 ' : '-mr-8 sm:pl-4 sm:mr-0 '
         }`}
       >
-        <motion.div
+        <div
           className={`w-full flex-none -ml-full md:rounded-3xl transform shadow-lg bg-gradient-to-br ${gradients[color][0]} ${rotation[rotate]}`}
           {...gradientProps}
         />
@@ -50,7 +49,7 @@ export default function GradientLockup({
           </div>
           <div
             style={{ maxWidth: '100%', overflow: 'scroll' }}
-            className="relative w-full lg:w-auto col-start-1 col-end-4 md:px-8 lg:px-0 lg:col-start-3 lg:col-end-4 row-start-3 row-end-4 lg:row-start-2 lg:row-end-5 self-center pb-8 lg:pb-0"
+            className="relative w-full bg-transparent lg:w-auto col-start-1 col-end-4 md:px-8 lg:px-0 lg:col-start-3 lg:col-end-4 row-start-3 row-end-4 lg:row-start-2 lg:row-end-5 self-center pb-8 lg:pb-0"
           >
             {right}
           </div>

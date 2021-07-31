@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
                 href="https://wallet.signup.cash"
               >
                 <span className="sm:hidden">Wallet</span>
-                <span className="hidden sm:inline">Wallet</span>
+                <span className="hidden sm:inline">Web Wallet</span>
               </a>
               <a
                 className="text-base leading-6 py-2 font-medium hover:text-gray-600 transition-colors duration-200"

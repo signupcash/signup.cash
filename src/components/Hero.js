@@ -31,7 +31,7 @@ const jsCode = `
 `
 
 export function Hero() {
-  const [bchPrice, setBchPrice] = useState(275)
+  const [bchPrice, setBchPrice] = useState(500)
   const [finished, setFinished] = useState(false)
   const supportsMd = useMedia('(min-width: 640px)')
   const [isMd, setIsMd] = useState(false)
@@ -156,20 +156,11 @@ export function Hero() {
                 href="https://flipstarter.cash"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-red-500 underline font-semibold"
+                className="text-teal-700 underline font-semibold"
               >
                 Flipstarter
               </a>{' '}
-              or{' '}
-              <a
-                href="https://coinparty.org"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="text-red-500 underline font-semibold"
-              >
-                CoinParty hackathon
-              </a>{' '}
-              to raise funds!
+              and Signup to raise funds!
             </p>
           </div>
         </div>
