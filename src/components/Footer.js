@@ -46,7 +46,7 @@ export default function Footer() {
         >
           <li className="space-y-5">
             <div className="py-5 sm:pt-6">
-              <img src={logo} style={{ width: 120 }} />
+              <img alt="Signup logo" src={logo} style={{ width: 120 }} />
             </div>
           </li>
 
@@ -61,10 +61,8 @@ export default function Footer() {
               <ul className="space-y-4">
                 {footerNav[section].items.map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href}>
-                      <a className="hover:text-gray-900 transition-colors duration-200">
+                    <Link href={item.href} className="hover:text-gray-900 transition-colors duration-200">
                         {item.title}
-                      </a>
                     </Link>
                   </li>
                 ))}
