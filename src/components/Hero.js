@@ -3,25 +3,15 @@ import axios from 'axios'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import dark from 'react-syntax-highlighter/dist/esm/styles/hljs/atom-one-dark'
 import { CodeWindow } from './CodeWindow'
-import tokenize from '../macros/tokenize.macro'
 import { Token } from './Code'
-import { AnimateSharedLayout, motion, useAnimation } from 'framer-motion'
+import { useAnimation } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
-import clsx from 'clsx'
-import { debounce } from 'debounce'
-import { fit } from '../utils/fit'
 import styles from './Hero.module.css'
 import { useMedia } from '../hooks/useMedia'
-import { wait } from '../utils/wait'
-import { createInViewPromise } from '../utils/createInViewPromise.js'
 import GradientLockup from './GradientLockup'
 
 // number is taken from bitcoincash.network
-const BCHRaisedByFS = 5847.73
-
-const CHAR_DELAY = 75
-const GROUP_DELAY = 1000
-const TRANSITION = { duration: 0.5 }
+const BCHRaisedByFS = 8978.27
 
 const jsCode = `
   import Signup from "@signupcash/provider";
@@ -41,21 +31,10 @@ const jsCode = `
 `
 
 export function Hero() {
-  const containerRef = useRef()
-  const [step, setStep] = useState(-1)
-  const [state, setState] = useState({ group: -1, char: -1 })
   const [bchPrice, setBchPrice] = useState(275)
-  const cursorControls = useAnimation()
-  const [wide, setWide] = useState(false)
   const [finished, setFinished] = useState(false)
   const supportsMd = useMedia('(min-width: 640px)')
   const [isMd, setIsMd] = useState(false)
-  const [containerRect, setContainerRect] = useState()
-  const md = supportsMd && isMd
-  const mounted = useRef(true)
-  const inViewRef = useRef()
-
-  const layout = !finished
 
   useEffect(() => {
     axios
@@ -211,14 +190,4 @@ export function Hero() {
       }
     />
   )
-}
-
-function HeroToken({
-  currentChar,
-  onCharComplete,
-  currentGroup,
-  onGroupComplete,
-  ...props
-}) {
-  return <Token {...props} />
 }
