@@ -9,7 +9,7 @@ const footerNav = {
     className: 'row-span-2',
     items: [
       { title: 'Documentation', href: 'https://docs.signup.cash' },
-      { title: 'Demos', href: 'https://signup-examples-v1.vercel.app/' },
+      { title: 'Developer Demos', href: 'https://dev-examples.signup.cash' },
       {
         title: 'Intro Blog Post',
         href:
@@ -61,8 +61,11 @@ export default function Footer() {
               <ul className="space-y-4">
                 {footerNav[section].items.map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} className="hover:text-gray-900 transition-colors duration-200">
-                        {item.title}
+                    <Link
+                      href={item.href}
+                      className="hover:text-gray-900 transition-colors duration-200"
+                    >
+                      {item.title}
                     </Link>
                   </li>
                 ))}
